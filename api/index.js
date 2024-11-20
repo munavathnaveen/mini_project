@@ -6,7 +6,7 @@ const router = require("./routes/userRoutes");
 const connectDB = require("./dbConnection/dbConnection");
 const cookieParser = require("cookie-parser");
 const app = express();
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "https://farm2industry.vercel.app/" }));
 connectDB();
 app.use(express.json());
 app.use(cookieParser());
